@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pendik Pativet Veteriner Kliniği · Bahçelievler, Pendik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Konsept: neşeli, çıkartma (sticker) dili; maskot Pepe sayfa boyunca rehber */
+:root{--sun:#ffcc3d;--coral:#ff6b5b;--ink:#2a2140;--plum:#5b3f8c;--mint:#c9f2e3;--paper:#fffdf6;--line:#2a2140}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Nunito,system-ui,sans-serif;line-height:1.55}
+h1,h2,h3{font-family:Fredoka,Nunito,sans-serif;line-height:1.1;margin:0;text-wrap:balance}
+a{color:inherit}
+.demo{background:var(--ink);color:#fff;font-size:12.5px;text-align:center;padding:6px 16px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+nav{display:flex;justify-content:space-between;align-items:center;padding-block:18px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Fredoka;font-weight:700;font-size:22px;text-decoration:none}
+.brand svg{width:44px;height:44px}
+.pill{display:inline-flex;align-items:center;gap:8px;border:2.5px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:800;text-decoration:none;background:#fff;box-shadow:3px 3px 0 var(--line);transition:transform .15s,box-shadow .15s}
+.pill:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--line)}
+.pill.sun{background:var(--sun)}.pill.coral{background:var(--coral);color:#fff}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;padding-block:30px 60px}
+.hero h1{font-size:clamp(40px,7vw,78px);font-weight:700}
+.hero h1 em{font-style:normal;background:var(--sun);padding:0 .15em;border-radius:12px;box-decoration-break:clone}
+.hero p{font-size:19px;max-width:520px;margin:18px 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.stage{position:relative;aspect-ratio:1;max-width:440px;width:100%;justify-self:center}
+.stage .blob{position:absolute;inset:6%;background:var(--mint);border-radius:46% 54% 42% 58%/55% 45% 55% 45%;border:2.5px solid var(--line)}
+.stage svg.pepe{position:absolute;inset:10% 8% 0;width:84%;height:auto}
+.sticker{position:absolute;background:#fff;border:2.5px solid var(--line);border-radius:16px;padding:8px 12px;font-weight:800;font-size:14px;box-shadow:3px 3px 0 var(--line)}
+.s1{top:4%;left:-2%;transform:rotate(-6deg);background:var(--sun)}
+.s2{bottom:10%;right:-4%;transform:rotate(5deg)}
+.strip{background:var(--plum);color:#fff;border-block:2.5px solid var(--line);overflow:hidden}
+.strip div{display:flex;gap:40px;white-space:nowrap;padding-block:14px;font-family:Fredoka;font-size:20px;animation:kay 28s linear infinite}
+@keyframes kay{to{transform:translateX(-50%)}}
+section{padding-block:70px}
+.kicker{font-weight:800;color:var(--coral);letter-spacing:.06em;text-transform:uppercase;font-size:13px}
+h2{font-size:clamp(30px,4.5vw,46px);margin:8px 0 14px}
+.lead{max-width:600px;font-size:17px;margin:0 0 30px}
+.hizmet{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.h{border:2.5px solid var(--line);border-radius:22px;padding:22px;background:#fff;box-shadow:4px 4px 0 var(--line)}
+.h:nth-child(3n+1){background:#fff4cc}.h:nth-child(3n+2){background:#ffe1dc}.h:nth-child(3n){background:var(--mint)}
+.h h3{font-size:22px;margin:12px 0 6px}.h p{margin:0}
+.h svg{width:46px;height:46px}
+/* Aşı karnesi */
+.karne{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;align-items:start}
+.form{background:var(--sun);border:2.5px solid var(--line);border-radius:24px;padding:24px;box-shadow:5px 5px 0 var(--line)}
+.form label{display:block;font-weight:800;margin:12px 0 6px}
+.seg{display:flex;gap:8px}
+.seg button{flex:1;border:2.5px solid var(--line);background:#fff;border-radius:14px;padding:10px;font:800 16px Nunito;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:#fff}
+.form input{width:100%;border:2.5px solid var(--line);border-radius:14px;padding:11px;font:700 16px Nunito;background:#fff}
+.list{display:grid;gap:10px}
+.row{display:grid;grid-template-columns:92px 1fr;gap:14px;align-items:center;background:#fff;border:2.5px solid var(--line);border-radius:16px;padding:12px 14px}
+.row b{font-family:Fredoka;font-size:15px;background:var(--mint);border-radius:10px;padding:6px 8px;text-align:center}
+.row.past{opacity:.55}
+.small{font-size:13px;opacity:.8;margin-top:10px}
+.konum{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{border:2.5px solid var(--line);border-radius:24px;background:#fff;padding:26px;box-shadow:5px 5px 0 var(--line)}
+.card dt{font-weight:800;margin-top:14px}.card dd{margin:2px 0 0}
+.saat{display:flex;align-items:center;gap:10px;font-weight:800;margin-top:6px}
+.dot{width:12px;height:12px;border-radius:50%;background:#bbb;border:2px solid var(--line)}
+.open .dot{background:#3ccf7a}
+.mapart{background:var(--mint);position:relative;min-height:280px;overflow:hidden}
+.mapart svg{position:absolute;inset:0;width:100%;height:100%}
+.mapart .pill{position:absolute;left:22px;bottom:22px}
+footer{background:var(--ink);color:#fff;padding-block:34px;margin-top:40px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media(max-width:820px){.hero,.karne,.konum{grid-template-columns:1fr}.hizmet{grid-template-columns:1fr 1fr}.stage{max-width:340px}}
+@media(max-width:520px){.hizmet{grid-template-columns:1fr}nav .pill{display:none}section{padding-block:52px}}
+@media(prefers-reduced-motion:reduce){.strip div{animation:none}}
+
+</style>
+</head>
+<body>
+<div class="demo">Tasarım önizlemesi: Pendik Pativet Veteriner Kliniği için hazırlanmış örnek sayfadır, kliniğin resmi sitesi değildir.</div>
+
+<div class="wrap">
+<nav>
+  <a class="brand" href="#"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#ffcc3d" stroke="#2a2140" stroke-width="3"/><ellipse cx="16" cy="22" rx="8" ry="13" fill="#2a2140" transform="rotate(-20 16 22)"/><ellipse cx="48" cy="22" rx="8" ry="13" fill="#2a2140" transform="rotate(20 48 22)"/><circle cx="25" cy="32" r="3.5" fill="#2a2140"/><circle cx="39" cy="32" r="3.5" fill="#2a2140"/><ellipse cx="32" cy="41" rx="5" ry="3.5" fill="#2a2140"/><path d="M27 46q5 4 10 0" stroke="#2a2140" stroke-width="3" fill="none" stroke-linecap="round"/></svg>Pativet</a>
+  <a class="pill sun" href="tel:+905312371887">0531 237 18 87</a>
+</nav>
+
+<header class="hero">
+  <div>
+    <h1>Pendik'in <em>pati</em> pati gelen dostlarına.</h1>
+    <p>Aydınlıyolu Caddesi'nin hemen yanında, Bahçelievler'de. WhatsApp'tan yazın, size uygun saati hemen verelim.</p>
+    <div class="btns">
+      <a class="pill coral" href="tel:+905312371887">Randevu için ara</a>
+      <a class="pill" href="#karne">Aşı takvimini çıkar</a>
+    </div>
+  </div>
+  <div class="stage" aria-hidden="true">
+    <div class="blob"></div>
+    <svg class="pepe" viewBox="0 0 300 300">
+      <ellipse cx="150" cy="285" rx="95" ry="12" fill="#2a2140" opacity=".15"/>
+      <path d="M70 290q-10-110 80-120q90 10 80 120z" fill="#fff" stroke="#2a2140" stroke-width="5"/>
+      <path d="M118 210q32 18 64 0" stroke="#ff6b5b" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <circle cx="150" cy="226" r="11" fill="#ffcc3d" stroke="#2a2140" stroke-width="4"/>
+      <ellipse cx="88" cy="88" rx="26" ry="50" fill="#2a2140" transform="rotate(-24 88 88)"/>
+      <ellipse cx="212" cy="88" rx="26" ry="50" fill="#2a2140" transform="rotate(24 212 88)"/>
+      <circle cx="150" cy="118" r="72" fill="#fff" stroke="#2a2140" stroke-width="5"/>
+      <ellipse cx="118" cy="104" rx="20" ry="24" fill="#ffcc3d" opacity=".9"/>
+      <circle cx="122" cy="112" r="9" fill="#2a2140"/><circle cx="178" cy="112" r="9" fill="#2a2140"/>
+      <circle cx="125" cy="109" r="3" fill="#fff"/><circle cx="181" cy="109" r="3" fill="#fff"/>
+      <ellipse cx="150" cy="140" rx="14" ry="10" fill="#2a2140"/>
+      <path d="M134 156q16 14 32 0" stroke="#2a2140" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M150 162q0 16 10 18q10-2 6-18" fill="#ff6b5b" stroke="#2a2140" stroke-width="4"/>
+    </svg>
+    <span class="sticker s1">Merhaba Pendik!</span>
+    <span class="sticker s2">Her gün 10.00–19.30</span>
+  </div>
+</header>
+</div>
+
+<div class="strip" aria-hidden="true"><div>
+  <span>Aşı ✦ Check-up ✦ Kısırlaştırma ✦ Diş bakımı ✦ Parazit ✦ Mama danışmanlığı ✦</span><span>Aşı ✦ Check-up ✦ Kısırlaştırma ✦ Diş bakımı ✦ Parazit ✦ Mama danışmanlığı ✦</span>
+  <span>Aşı ✦ Check-up ✦ Kısırlaştırma ✦ Diş bakımı ✦ Parazit ✦ Mama danışmanlığı ✦</span><span>Aşı ✦ Check-up ✦ Kısırlaştırma ✦ Diş bakımı ✦ Parazit ✦ Mama danışmanlığı ✦</span>
+</div></div>
+
+<section><div class="wrap">
+  <div class="kicker">Neler yapıyoruz</div>
+  <h2>Pati pati hizmetler</h2>
+  <p class="lead">İlk aşıdan yaşlılık kontrollerine kadar her dönemde yanınızdayız. <small>(Liste klinikle birlikte netleştirilecek.)</small></p>
+  <div class="hizmet">
+    <div class="h"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="#fff" stroke="#2a2140" stroke-width="3"/><path d="M15 20v6a9 9 0 0 0 18 0v-6M33 26v4a4 4 0 1 0 0 0" stroke="#2a2140" stroke-width="3" fill="none" stroke-linecap="round"/></svg><h3>Muayene ve check-up</h3><p>Yılda bir kontrol, sorunları büyümeden yakalar.</p></div>
+    <div class="h"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="#fff" stroke="#2a2140" stroke-width="3"/><path d="M14 34l12-12m-4-4l8 8m-2-10l6 6M26 22l-8 8" stroke="#2a2140" stroke-width="3" stroke-linecap="round"/></svg><h3>Aşılar</h3><p>Karma, kuduz ve diğer aşılar; karnesiyle birlikte.</p></div>
+    <div class="h"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="#fff" stroke="#2a2140" stroke-width="3"/><path d="M16 30c4-10 12-10 16 0M24 14v6" stroke="#2a2140" stroke-width="3" fill="none" stroke-linecap="round"/></svg><h3>Kısırlaştırma</h3><p>Doğru zamanlama ve ameliyat sonrası takip.</p></div>
+    <div class="h"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="#fff" stroke="#2a2140" stroke-width="3"/><path d="M17 16c-3 6 0 18 4 18s2-6 3-6 0 6 3 6 7-12 4-18-7 0-7 0-4-6-7 0z" stroke="#2a2140" stroke-width="3" fill="none"/></svg><h3>Diş bakımı</h3><p>Diş taşı temizliği ve ağız kontrolü.</p></div>
+    <div class="h"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="#fff" stroke="#2a2140" stroke-width="3"/><path d="M20 12h8M22 12v10l-7 12h18l-7-12V12" stroke="#2a2140" stroke-width="3" fill="none" stroke-linejoin="round"/></svg><h3>Tahlil</h3><p>Kan ve temel laboratuvar testleri.</p></div>
+    <div class="h"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="#fff" stroke="#2a2140" stroke-width="3"/><path d="M24 13l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" stroke="#2a2140" stroke-width="3" fill="none" stroke-linejoin="round"/></svg><h3>Parazit ve bakım</h3><p>İç-dış parazit, tüy ve tırnak bakımı.</p></div>
+  </div>
+</div></section>
+
+<section id="karne" style="background:#fff;border-block:2.5px solid var(--line)"><div class="wrap">
+  <div class="kicker">Pativet aşı karnesi</div>
+  <h2>Yavrunuzun aşı takvimini hemen görün</h2>
+  <p class="lead">Doğum tarihini girin, size örnek bir takvim çıkaralım. Kesin plan muayenede hekimimizle yapılır.</p>
+  <div class="karne">
+    <div class="form">
+      <label>Dostunuz</label>
+      <div class="seg" role="group"><button id="kopek" aria-pressed="true">Köpek</button><button id="kedi" aria-pressed="false">Kedi</button></div>
+      <label for="dt">Doğum tarihi</label>
+      <input type="date" id="dt">
+      <p class="small">Takvim örnektir; ırk, yaş ve sağlık durumuna göre değişir.</p>
+      <a class="pill coral" style="margin-top:8px" href="tel:+905312371887">İlk aşı randevusu al</a>
+    </div>
+    <div class="list" id="list"></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="kicker">Gel, tanışalım</div>
+  <h2>Çiğilerik Sokak No:6/A</h2>
+  <div class="konum">
+    <div class="card">
+      <dl>
+        <dt>Adres</dt><dd>Bahçelievler Mah., Aydınlıyolu Cd., Çiğilerik/Takı Sk. No:6/A, 34890 Pendik/İstanbul</dd>
+        <dt>Telefon</dt><dd><a href="tel:+905312371887"><b>0531 237 18 87</b></a></dd>
+        <dt>Çalışma saatleri</dt><dd>Her gün 10.00–19.30 <small>(teyit edilecek)</small></dd>
+      </dl>
+      <div class="saat" id="saat"><span class="dot"></span><span>Durum hesaplanıyor…</span></div>
+    </div>
+    <div class="card mapart">
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M-10 210 Q120 170 210 190 T420 150" stroke="#fff" stroke-width="26" fill="none"/>
+        <path d="M150 -10 Q170 120 140 310" stroke="#fff" stroke-width="18" fill="none"/>
+        <path d="M300 -10 L260 310" stroke="#fff" stroke-width="12" fill="none"/>
+        <text x="20" y="196" font-family="Nunito" font-weight="800" font-size="13" fill="#2a2140" opacity=".6">Aydınlıyolu Cd.</text>
+        <text x="270" y="40" font-family="Nunito" font-weight="800" font-size="12" fill="#2a2140" opacity=".5">Bahçelievler</text>
+        <text x="20" y="40" font-family="Nunito" font-weight="800" font-size="12" fill="#2a2140" opacity=".5">Pendik</text>
+        <g transform="translate(200 150)"><path d="M0 26 C-18 6 -18 -14 0 -14 C18 -14 18 6 0 26z" fill="#ff6b5b" stroke="#2a2140" stroke-width="3"/><circle cx="0" cy="-2" r="6" fill="#fff" stroke="#2a2140" stroke-width="2"/></g>
+      </svg>
+      <a class="pill sun" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pendik+Pativet+Veteriner+Klini%C4%9Fi+Bah%C3%A7elievler+Mah.%2C+Ayd%C4%B1nl%C4%B1yolu+Cd.%2C+%C3%87i%C4%9Filerik%2FTak%C4%B1+Sk.+No%3A6%2FA%2C+34890+Pendik%2F%C4%B0stanbul">Yol tarifi al</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Pendik Pativet Veteriner Kliniği · Bahçelievler, Pendik</span><a href="tel:+905312371887">0531 237 18 87</a></div></footer>
+
+<script>
+const plans={kopek:[[6,'1. karma aşı'],[8,'İç-dış parazit'],[10,'2. karma aşı'],[12,'Kuduz aşısı'],[14,'3. karma aşı (gerekirse)'],[16,'Bronşin / ek koruma'],[52,'Yıllık rapel ve check-up']],
+ kedi:[[8,'1. karma aşı'],[8,'İç-dış parazit'],[12,'2. karma aşı'],[12,'Lösemi testi (önerilir)'],[16,'Kuduz aşısı'],[24,'Kısırlaştırma görüşmesi'],[52,'Yıllık rapel ve check-up']]};
+let tur='kopek';const dt=document.getElementById('dt'),list=document.getElementById('list');
+const d0=new Date();d0.setDate(d0.getDate()-49);dt.value=d0.toISOString().slice(0,10);
+function render(){const b=new Date(dt.value);if(isNaN(b))return;const now=new Date();
+ list.innerHTML=plans[tur].map(([w,t])=>{const d=new Date(b);d.setDate(d.getDate()+w*7);const past=d<now;
+ return `<div class="row ${past?'past':''}"><b>${w<52?w+'. hafta':'1 yaş'}</b><div><strong>${t}</strong><br><small>${d.toLocaleDateString('tr-TR',{day:'numeric',month:'long',year:'numeric'})}${past?' · tarihi geçti, bizi arayın':''}</small></div></div>`}).join('')}
+['kopek','kedi'].forEach(id=>document.getElementById(id).onclick=e=>{tur=id;document.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed',x.id===id));render()});
+dt.oninput=render;render();
+const h=+new Date().toLocaleString('en-US',{timeZone:'Europe/Istanbul',hour:'numeric',hour12:false});
+const s=document.getElementById('saat');const open=h*60>=600&&h*60<1170;s.classList.toggle('open',open);s.lastElementChild.textContent=open?'Şu an açığız':'Şu an kapalıyız, açılış 10.00';
+</script>
+</body>
+</html>

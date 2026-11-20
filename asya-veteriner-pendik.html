@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Asya Veteriner Kliniği · Batı Mahallesi, Pendik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+/* Konsept: hekimin kendi muayenehanesi. Editoryal düzen, büyük rakamlar, kızıl elma rengi tek vurgu. */
+:root{--apple:#c8102e;--leaf:#2f6b3a;--paper:#f7f5f2;--ink:#1a1a1a;--mute:#5d5a55;--rule:#d9d4cc}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.6}
+h1,h2,h3,.sans{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.02;margin:0;text-wrap:balance}
+a{color:inherit}
+.demo{background:var(--ink);color:#fff;font:12.5px system-ui,sans-serif;text-align:center;padding:6px 16px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+nav{display:flex;justify-content:space-between;align-items:center;padding-block:20px;border-bottom:1.5px solid var(--ink);font-family:"Bricolage Grotesque"}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;text-decoration:none}
+.logo svg{width:30px;height:30px}
+nav .links{display:flex;gap:22px;font-size:15px;font-weight:500}
+nav .links a{text-decoration:none}
+.hero{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;padding-block:50px 40px;align-items:end}
+.hero .t{grid-column:1/9}
+.hero .eb{font-family:"Bricolage Grotesque";font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--apple)}
+.hero h1{font-size:clamp(46px,8vw,112px);font-weight:800;letter-spacing:-.03em;margin-top:14px}
+.hero h1 span{color:var(--apple)}
+.hero .side{grid-column:9/13;border-left:1.5px solid var(--ink);padding-left:22px}
+.hero .side p{margin:0 0 18px;color:var(--mute)}
+.btn{display:inline-block;font-family:"Bricolage Grotesque";font-weight:700;font-size:16px;padding:14px 22px;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.r{background:var(--apple);border-color:var(--apple);color:#fff}
+.since{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;border-block:1.5px solid var(--ink);padding-block:26px;align-items:center}
+.since .big{grid-column:1/6;font-family:"Bricolage Grotesque";font-weight:800;font-size:clamp(80px,14vw,190px);line-height:.85;letter-spacing:-.05em;color:var(--apple)}
+.since .txt{grid-column:6/13;font-size:22px}
+.since .txt b{font-family:"Bricolage Grotesque"}
+.doc{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;padding-block:70px}
+.portrait{grid-column:1/5;aspect-ratio:4/5;max-width:100%;background:#ece6dd;border:1.5px solid var(--ink);display:grid;place-items:center;position:relative}
+.portrait .mono{font-family:"Bricolage Grotesque";font-weight:800;font-size:96px;color:var(--apple)}
+.portrait small{position:absolute;bottom:12px;left:12px;right:12px;font:13px system-ui,sans-serif;color:var(--mute);text-align:center}
+.doc .bio{grid-column:6/13}
+.doc h2{font-size:clamp(34px,4.6vw,58px);margin-bottom:22px}
+.doc .bio p{max-width:60ch;margin:0 0 16px}
+.quote{font-size:26px;font-style:italic;border-left:4px solid var(--apple);padding-left:20px;margin:28px 0}
+.svc{border-top:1.5px solid var(--ink)}
+.svc .row{display:grid;grid-template-columns:80px 1fr 1.2fr;gap:20px;padding-block:24px;border-bottom:1px solid var(--rule);align-items:baseline}
+.svc .row .n{font-family:"Bricolage Grotesque";font-weight:700;color:var(--apple);font-variant-numeric:tabular-nums}
+.svc .row h3{font-size:28px}
+.svc .row p{margin:0;color:var(--mute)}
+.note{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding-block:70px}
+.note h2{font-size:clamp(32px,4.4vw,52px);margin-bottom:16px}
+form{display:grid;gap:14px;font-family:"Bricolage Grotesque"}
+form label{font-weight:700;font-size:14px;display:grid;gap:6px}
+form input,form select,form textarea{font:400 17px Newsreader,serif;padding:12px;border:1.5px solid var(--ink);background:#fff;border-radius:0}
+.ticket{background:#fff;border:1.5px solid var(--ink);padding:26px;position:relative}
+.ticket::before{content:"RANDEVU NOTU";position:absolute;top:-11px;left:20px;background:var(--paper);padding:0 8px;font:700 12px "Bricolage Grotesque";letter-spacing:.14em;color:var(--apple)}
+.ticket pre{white-space:pre-wrap;font:18px/1.6 Newsreader,serif;margin:0 0 18px}
+.info{display:grid;grid-template-columns:repeat(3,1fr);border-top:1.5px solid var(--ink)}
+.info>div{padding:26px 20px 30px 0}
+.info>div+div{border-left:1px solid var(--rule);padding-left:20px}
+.info .l{font:700 13px "Bricolage Grotesque";letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.info .v{font-family:"Bricolage Grotesque";font-size:24px;font-weight:700;margin-top:6px}
+footer{border-top:1.5px solid var(--ink);padding-block:26px;font:14px system-ui,sans-serif;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:860px){.hero .t,.hero .side,.since .big,.since .txt,.portrait,.doc .bio{grid-column:1/-1}.hero .side{border-left:0;padding-left:0;border-top:1.5px solid var(--ink);padding-top:18px}.note,.info{grid-template-columns:1fr}.info>div+div{border-left:0;padding-left:0;border-top:1px solid var(--rule)}.svc .row{grid-template-columns:50px 1fr}.svc .row p{grid-column:2}nav .links{display:none}.portrait{max-width:340px}}
+:root{--apple:#0b6e99;--paper:#f4f7f9}
+</style>
+</head>
+<body>
+<div class="demo">Tasarım önizlemesi: Asya Veteriner Kliniği için hazırlanmış örnek sayfadır, kliniğin resmi sitesi değildir.</div>
+<div class="wrap">
+<nav>
+  <a class="logo" href="#"><span style="display:grid;place-items:center;width:34px;height:34px;background:var(--apple);color:#fff;font-size:13px;font-weight:800">AV</span>Asya Veteriner</a>
+  <div class="links"><a href="#hekim">Hakkımızda</a><a href="#hizmet">Hizmetler</a><a href="#not">Randevu</a><a href="tel:+902163909317">0216 390 93 17</a></div>
+</nav>
+
+<header class="hero">
+  <div class="t">
+    <div class="eb">Batı Mahallesi · Pendik</div>
+    <h1>Pendik merkezde, <span>güvenilir</span> bir adres.</h1>
+  </div>
+  <div class="side">
+    <p>Erol Kaya Caddesi'nde, Pendik merkezin içinde. Aşıdan tedaviye, dostunuzun sağlığını yakından takip ediyoruz.</p>
+    <a class="btn r" href="tel:+902163909317">Randevu: 0216 390 93 17</a>
+  </div>
+</header>
+
+<div class="since">
+  <div class="big">73</div>
+  <div class="txt"><b>Erol Kaya Caddesi 73.</b> Pendik merkezde, Marmaray'a ve sahile yürüme mesafesinde.</div>
+</div>
+</div>
+
+<div class="wrap">
+<section class="doc" id="hekim">
+  <div class="portrait"><span class="mono">AV</span><small>Ekip fotoğrafı buraya gelecek</small></div>
+  <div class="bio">
+    <div class="sans" style="font-weight:700;color:var(--apple);letter-spacing:.12em;text-transform:uppercase;font-size:14px;margin-bottom:12px">Hakkımızda</div>
+    <h2>Batı Mahallesi'nin kliniği</h2>
+    <p>Pendik merkezde yaşayan kedi ve köpek dostlarınız için yakın, ulaşması kolay ve güvenilir bir klinik olmaya çalışıyoruz.</p>
+    <p>Bu bölüm hekimlerimizin adı, eğitimi ve ilgi alanlarıyla doldurulacak.</p>
+    <p class="quote">“Klinikten kısa bir söz buraya gelecek.”</p>
+  </div>
+</section>
+
+<section id="hizmet" style="padding-bottom:70px">
+  <h2 style="font-size:clamp(34px,4.6vw,58px);margin-bottom:26px">Hizmetler</h2>
+  <div class="svc">
+    <div class="row"><span class="n">01</span><h3>Muayene ve check-up</h3><p>Yıllık kontrol, kilo ve beslenme takibi.</p></div>
+    <div class="row"><span class="n">02</span><h3>Aşılama</h3><p>Yavru aşı programı, yıllık rapeller ve aşı karnesi.</p></div>
+    <div class="row"><span class="n">03</span><h3>Kısırlaştırma</h3><p>Ön muayene, operasyon ve dikiş kontrolü.</p></div>
+    <div class="row"><span class="n">04</span><h3>Laboratuvar</h3><p>Kan tahlili ve temel testler.</p></div>
+    <div class="row"><span class="n">05</span><h3>Diş ve ağız</h3><p>Diş taşı temizliği ve kontrol.</p></div>
+  </div>
+  <p style="color:var(--mute);font-size:15px">Hizmet listesi klinikle birlikte netleştirilecek.</p>
+</section>
+
+<section class="note" id="not" style="border-top:1.5px solid var(--ink)">
+  <div>
+    <h2>Aramadan önce notunuzu hazırlayın</h2>
+    <p style="color:var(--mute)">Telefonda hiçbir şeyi unutmamak için birkaç bilgiyi doldurun. Notu kopyalayıp aradığınızda okuyabilirsiniz.</p>
+    <form id="f" onsubmit="return false">
+      <label>Dostunuzun adı<input id="ad" value="Pamuk"></label>
+      <label>Türü<select id="tur"><option>Kedi</option><option>Köpek</option><option>Diğer</option></select></label>
+      <label>Yaşı<input id="yas" value="2"></label>
+      <label>Neden geliyorsunuz?<textarea id="sebep" rows="3">Yıllık aşısı ve genel kontrol</textarea></label>
+    </form>
+  </div>
+  <div class="ticket">
+    <pre id="out"></pre>
+    <button class="btn" id="kopya" type="button" style="background:#fff;cursor:pointer">Notu kopyala</button>
+    <a class="btn r" href="tel:+902163909317" style="margin-left:6px">Şimdi ara</a>
+  </div>
+</section>
+
+<div class="info">
+  <div><div class="l">Adres</div><div class="v">Erol Kaya Cd. No:73 D:B</div><p style="margin:6px 0 0;color:var(--mute)">Batı Mah., 34890 Pendik/İstanbul · <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Asya+Veteriner+Klini%C4%9Fi+Erol+Kaya+Cd.+No%3A73+D%3AB+Bat%C4%B1+Mah.%2C+34890+Pendik%2F%C4%B0stanbul">Haritada aç</a></p></div>
+  <div><div class="l">Telefon</div><div class="v"><a href="tel:+902163909317" style="text-decoration:none">0216 390 93 17</a></div></div>
+  <div><div class="l">Saatler</div><div class="v">09.00–19.00</div><p style="margin:6px 0 0;color:var(--mute)">teyit edilecek</p></div>
+</div>
+</div>
+
+<footer><div class="wrap"><span>© 2026 Asya Veteriner Kliniği · Batı Mahallesi, Pendik</span><span>Pendik merkez</span></div></footer>
+
+<script>
+
+const ids=['ad','tur','yas','sebep'],out=document.getElementById('out');
+function r(){const v=Object.fromEntries(ids.map(i=>[i,document.getElementById(i).value.trim()]));
+ out.textContent=`Merhaba, randevu almak istiyorum.\n\nAdı: ${v.ad||'-'}\nTürü: ${v.tur}\nYaşı: ${v.yas||'-'}\nSebep: ${v.sebep||'-'}`}
+ids.forEach(i=>document.getElementById(i).addEventListener('input',r));r();
+document.getElementById('kopya').onclick=async e=>{try{await navigator.clipboard.writeText(out.textContent);e.target.textContent='Kopyalandı'}catch(_){const s=getSelection(),g=document.createRange();g.selectNodeContents(out);s.removeAllRanges();s.addRange(g);e.target.textContent='Seçildi, kopyalayın'}};
+</script>
+</body>
+</html>
