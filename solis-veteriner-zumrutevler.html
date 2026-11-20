@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Solis Veteriner Kliniği · Zümrütevler, Maltepe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Konsept: Boğaz kıyısı. Lacivert gece, köpük yeşili, akşam ışığı. Tipografi editoryal serif. */
+:root{--deep:#0b2540;--sea:#134a6e;--foam:#9fe3d0;--sand:#f3efe6;--sunset:#ff9a62;--ink:#0b2540;--mute:#4f6378}
+*{box-sizing:border-box}
+body{margin:0;background:var(--sand);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.05;margin:0;text-wrap:balance}
+a{color:inherit}
+.demo{background:#000;color:#fff;font-size:12.5px;text-align:center;padding:6px 16px}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+.hero{background:linear-gradient(180deg,var(--deep) 0%,var(--sea) 70%,#1d6a8a 100%);color:#fff;position:relative;overflow:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding-block:22px}
+.logo{font-family:Fraunces;font-size:22px;font-weight:800;letter-spacing:.01em;text-decoration:none;display:flex;gap:10px;align-items:center}
+.logo i{width:34px;height:34px;border:1.5px solid var(--foam);border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:14px;color:var(--foam)}
+nav a.tel{white-space:nowrap;color:var(--foam);font-weight:600;text-decoration:none;border-bottom:1px solid currentColor}
+.hgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;padding-block:56px 150px;position:relative;z-index:2}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--foam)}
+.hero h1{font-size:clamp(44px,7.4vw,92px);font-weight:400;margin-top:16px}
+.hero h1 b{font-weight:800;font-style:italic;color:var(--foam)}
+.hero p{font-size:19px;max-width:520px;color:#d6e6f0;margin:22px 0 30px}
+.btn{display:inline-block;padding:14px 24px;border-radius:4px;font-weight:700;text-decoration:none;letter-spacing:.01em}
+.btn.f{background:var(--foam);color:var(--deep)}.btn.o{border:1.5px solid #fff;color:#fff;margin-left:8px}
+.clock{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:22px;backdrop-filter:blur(4px)}
+.clock .st{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+.clock .st span{width:10px;height:10px;border-radius:50%;background:#777}
+.clock.open .st span{background:#4ee39a;box-shadow:0 0 0 6px rgba(78,227,154,.2)}
+.bar{position:relative;height:8px;border-radius:4px;background:rgba(255,255,255,.15);margin:18px 0 8px}
+.bar .on{position:absolute;left:45.8%;width:33.3%;top:0;bottom:0;background:var(--foam);border-radius:4px}
+.bar .now{position:absolute;top:-5px;width:2px;height:18px;background:var(--sunset)}
+.ticks{display:flex;justify-content:space-between;font-size:12px;color:#a9c3d4;font-variant-numeric:tabular-nums}
+.clock small{display:block;color:#cfe0ea;margin-top:12px}
+.waves{position:absolute;left:0;right:0;bottom:-2px;height:140px;z-index:1}
+.waves path{animation:sway 9s ease-in-out infinite alternate}
+.waves path:nth-child(2){animation-duration:12s}
+@keyframes sway{to{transform:translateX(-60px)}}
+section{padding-block:84px}
+.intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}
+.intro h2{font-size:clamp(32px,4.4vw,52px)}
+.intro p{font-size:18px;color:var(--mute);margin:0 0 16px;max-width:62ch}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #cfd6dc;margin-top:30px}
+.facts div{padding:20px 16px 0 0}
+.facts b{font-family:Fraunces;font-size:34px;display:block;font-variant-numeric:tabular-nums}
+.facts span{font-size:14px;color:var(--mute)}
+.services{background:#fff}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid #dde3e8}
+.svc>div{padding:26px 26px 26px 0;border-bottom:1px solid #dde3e8;display:grid;grid-template-columns:44px 1fr;gap:14px}
+.svc>div:nth-child(odd){border-right:1px solid #dde3e8}
+.svc>div:nth-child(even){padding-left:26px}
+.svc em{font-family:Fraunces;font-style:italic;color:var(--sea);font-size:20px}
+.svc h3{font-size:22px;margin-bottom:4px}.svc p{margin:0;color:var(--mute)}
+.visit{background:var(--deep);color:#fff}
+.visit h2{font-size:clamp(32px,4.4vw,52px);margin-bottom:40px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.steps div{border-top:2px solid var(--foam);padding-top:18px}
+.steps div::before{counter-increment:s;content:"0" counter(s);font-family:Fraunces;color:var(--foam);font-size:15px}
+.steps h3{font-size:21px;margin:8px 0}.steps p{color:#bcd0de;margin:0}
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#fff;border:1px solid #dde3e8}
+.loc .info{padding:36px}
+.loc dl{margin:0}.loc dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:18px}.loc dd{margin:4px 0 0;font-size:18px}
+.loc .art{background:linear-gradient(180deg,#bfe6f0,#e8f6f2);position:relative;min-height:320px}
+.loc .art svg{position:absolute;inset:0;width:100%;height:100%}
+.loc .art a{position:absolute;left:24px;bottom:24px}
+footer{padding-block:30px;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:860px){.hgrid,.intro,.loc{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.svc{grid-template-columns:1fr}.svc>div:nth-child(odd){border-right:0}.svc>div:nth-child(even){padding-left:0}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.btn.o{margin:10px 0 0}.facts b{font-size:26px}section{padding-block:60px}.hgrid{padding-bottom:120px}}
+@media(prefers-reduced-motion:reduce){.waves path{animation:none}}
+:root{--deep:#2b1d3f;--sea:#4b2e6b;--foam:#f2c57c;--sand:#f6f1ea;--sunset:#e86a92;--ink:#2b1d3f}
+</style>
+</head>
+<body>
+<div class="demo">Tasarım önizlemesi: Solis Veteriner Kliniği için hazırlanmış örnek sayfadır, kliniğin resmi sitesi değildir.</div>
+
+<header class="hero">
+  <div class="wrap">
+    <nav><a class="logo" href="#"><i>SV</i>Solis Veteriner</a><a class="tel" href="tel:+905313830200">0531 383 02 00</a></nav>
+    <div class="hgrid">
+      <div>
+        <div class="eyebrow">Zümrütevler · Karaca Caddesi</div>
+        <h1>Solis: güneş gibi <b>sıcak bir bakım.</b></h1>
+        <p>Karaca Caddesi'nde, Zümrütevler'de. Muayene, aşı ve bakım için 11.00'den 19.00'a kadar buradayız.</p>
+        <a class="btn f" href="https://wa.me/905313830200?text=Merhaba%2C%20randevu%20almak%20istiyorum.">WhatsApp'tan randevu</a><a class="btn o" href="tel:+905313830200">Hemen ara</a>
+      </div>
+      <div class="clock" id="clock">
+        <div class="st"><span></span><b id="stt">Durum hesaplanıyor</b></div>
+        <div class="bar"><div class="on"></div><div class="now" id="now"></div></div>
+        <div class="ticks"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
+        <small>Her gün 11.00–19.00 (teyit edilecek). Turuncu çizgi şu anki saat.</small>
+      </div>
+    </div>
+  </div>
+  <svg class="waves" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 70 Q180 30 360 70 T720 70 T1080 70 T1440 70 T1800 70 V140 H0Z" fill="#9fe3d0" opacity=".35"/>
+    <path d="M0 95 Q180 60 360 95 T720 95 T1080 95 T1440 95 T1800 95 V140 H0Z" fill="#f3efe6"/>
+  </svg>
+</header>
+
+<section><div class="wrap intro">
+  <h2>Zümrütevler'in mahalle kliniği.</h2>
+  <div>
+    <p>Karaca Caddesi 22/B'deki kliniğimizde dostunuzu sakin bir ortamda muayene ediyor, her adımı size anlatıyoruz.</p>
+    <p>Rutin aşılardan beklenmedik bir rahatsızlığa kadar, dostunuzu acele ettirmeden muayene ediyor, ne yaptığımızı size açıkça anlatıyoruz.</p>
+    <div class="facts">
+      <div><b>19.00</b><span>kapanış saati</span></div>
+      <div><b>7/7</b><span>hafta boyu açık (teyit edilecek)</span></div>
+      <div><b>22/B</b><span>Karaca Cd. üzerinde</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <div class="eyebrow" style="color:var(--sea)">Hizmetler</div>
+  <h2 style="font-size:clamp(32px,4.4vw,52px);margin:12px 0 34px">Dostunuz için neler yapıyoruz</h2>
+  <div class="svc">
+    <div><em>i.</em><div><h3>Muayene ve check-up</h3><p>Genel sağlık kontrolü, kilo ve beslenme takibi.</p></div></div>
+    <div><em>ii.</em><div><h3>Aşı ve karne</h3><p>Yavru ve yetişkinler için aşı programı ve hatırlatma.</p></div></div>
+    <div><em>iii.</em><div><h3>Kısırlaştırma ve cerrahi</h3><p>Ameliyat öncesi tahliller ve sonrası takip.</p></div></div>
+    <div><em>iv.</em><div><h3>Laboratuvar</h3><p>Kan tahlili ve temel testler, sonuçları sizinle birlikte okuyoruz.</p></div></div>
+    <div><em>v.</em><div><h3>Diş ve ağız sağlığı</h3><p>Diş taşı temizliği ve kontrol.</p></div></div>
+    <div><em>vi.</em><div><h3>Parazit ve deri</h3><p>Pire, kene ve deri sorunlarına karşı koruma.</p></div></div>
+  </div>
+  <p style="color:var(--mute);font-size:14px;margin-top:18px">Hizmet listesi klinikle birlikte netleştirilecek.</p>
+</div></section>
+
+<section class="visit"><div class="wrap">
+  <h2>İlk ziyaretiniz nasıl geçer</h2>
+  <div class="steps">
+    <div><h3>Yazın ya da arayın</h3><p>WhatsApp'tan dostunuzun adını ve şikâyetini iletin, size uygun saati verelim.</p></div>
+    <div><h3>Tanışma</h3><p>Geçmiş aşılarını, beslenmesini ve alışkanlıklarını konuşuruz.</p></div>
+    <div><h3>Muayene</h3><p>Sakin bir ortamda, acele etmeden baştan kuyruğa kontrol.</p></div>
+    <div><h3>Plan</h3><p>Aşı takvimi ve bakım planını yazılı olarak elinize veririz.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="loc">
+    <div class="info">
+      <h2 style="font-size:38px">Bizi bulun</h2>
+      <dl>
+        <dt>Adres</dt><dd>Zümrütevler, Karaca Cd. No:22/B, 34852 Maltepe/İstanbul</dd>
+        <dt>Telefon ve WhatsApp</dt><dd><a href="tel:+905313830200">0531 383 02 00</a></dd>
+        <dt>Saatler</dt><dd>Her gün 11.00–19.00 <small>(teyit edilecek)</small></dd>
+      </dl>
+    </div>
+    <div class="art">
+      <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M0 0 H150 Q120 120 170 320 H0Z" fill="#7cc4dc"/>
+        <path d="M30 60 l20 -6 l4 10z M60 190 l26 -8 l4 12z" fill="#fff" opacity=".8"/>
+        <text x="22" y="140" font-family="Fraunces" font-style="italic" font-size="18" fill="#0b2540" opacity=".6">Zümrütevler</text>
+        <path d="M150 0 Q120 120 170 320" stroke="#fff" stroke-width="14" fill="none"/>
+        <text x="190" y="40" font-family="Instrument Sans" font-size="12" fill="#0b2540" opacity=".55" transform="rotate(80 190 40)">Karaca Cd.</text>
+        <rect x="104" y="120" width="34" height="10" fill="#0b2540" opacity=".6"/><text x="70" y="114" font-family="Instrument Sans" font-size="11" fill="#0b2540" opacity=".6">Maltepe</text>
+        <g transform="translate(205 175)"><circle r="26" fill="#ff9a62" opacity=".25"/><circle r="11" fill="#ff9a62" stroke="#0b2540" stroke-width="2.5"/></g>
+      </svg>
+      <a class="btn f" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Solis+Veteriner+Klini%C4%9Fi+Z%C3%BCmr%C3%BCtevler%2C+Karaca+Cd.+No%3A22%2FB%2C+34852+Maltepe%2F%C4%B0stanbul">Haritada aç</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Solis Veteriner Kliniği · Zümrütevler, Maltepe</span><span>0531 383 02 00</span></div></footer>
+
+<script>
+const t=new Date().toLocaleString('en-US',{timeZone:'Europe/Istanbul',hour:'numeric',minute:'numeric',hour12:false}).split(':');
+const m=(+t[0]%24)*60+ +t[1];document.getElementById('now').style.left=(m/1440*100)+'%';
+const open=m>=660&&m<1140;document.getElementById('clock').classList.toggle('open',open);
+document.getElementById('stt').textContent=open?'Şu an açığız':'Şu an kapalıyız · açılış 11.00';
+</script>
+</body>
+</html>
