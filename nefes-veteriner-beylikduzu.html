@@ -39,11 +39,12 @@ footer{padding-block:24px;font-weight:600}
 @media(max-width:820px){.svc,.local,.info{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.tape div{animation:none}}
 
-</style><style>.px{--px-bg:var(--y);--px-surf:var(--w);--px-ink:var(--k);--px-mute:var(--mute);--px-acc:var(--r);--px-accink:#fff;--px-acc2:var(--y);--px-dark:var(--k);--px-head:Anton,Impact,sans-serif;--px-r:0;--px-bd:3px solid var(--k);--px-sh:8px 8px 0 var(--k);--px-up:uppercase}
+</style><style>.px{--px-w:1160px;--px-pad:18px;--px-bg:var(--y);--px-surf:var(--w);--px-ink:var(--k);--px-mute:var(--mute);--px-acc:var(--r);--px-accink:#fff;--px-acc2:var(--y);--px-dark:var(--k);--px-head:Anton,Impact,sans-serif;--px-r:0;--px-bd:3px solid var(--k);--px-sh:8px 8px 0 var(--k);--px-up:uppercase}
 body{overflow-x:clip}
 .px{color:var(--px-ink);font-size:17px;line-height:1.6}
 .px *{box-sizing:border-box}
-.px-w{max-width:1180px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left))}
+.px-w{max-width:var(--px-w);margin:0 auto;padding:0 max(var(--px-pad),env(safe-area-inset-left))}
+.wrap .px-w{padding-left:0;padding-right:0;max-width:none}
 .px h2{font-family:var(--px-head);text-transform:var(--px-up);font-size:clamp(30px,4.6vw,52px);line-height:1.05;letter-spacing:-.01em;margin:0 0 14px;text-wrap:balance}
 .px .k{display:inline-block;font:700 12.5px/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--px-acc);margin-bottom:14px}
 .px-sec{padding:clamp(56px,8vw,104px) 0}
@@ -53,10 +54,10 @@ body{overflow-x:clip}
 .px-hero{position:relative;border-radius:var(--px-r);overflow:hidden;min-height:clamp(420px,62vw,620px);display:flex;align-items:flex-end;border:var(--px-bd);box-shadow:var(--px-sh);isolation:isolate}
 .px-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transform:scale(1.06);transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
 .px-hero.in img{transform:scale(1)}
-.px-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.72) 100%)}
+.px-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,0) 20%,rgba(0,0,0,.8) 100%)}
 .px-cap{padding:clamp(22px,4vw,48px);color:#fff;width:100%}
-.px-cap h2{color:#fff;font-size:clamp(34px,5.6vw,68px);max-width:14ch;margin-bottom:10px}
-.px-cap h2 em{font-style:normal;color:var(--px-acc2)}
+.px-cap h2{text-shadow:0 2px 20px rgba(0,0,0,.5);color:#fff;font-size:clamp(34px,5.6vw,68px);max-width:14ch;margin-bottom:10px}
+.px-cap h2 em{font-style:normal;color:color-mix(in srgb,var(--px-acc2) 45%,#fff)}
 .px-cap p{margin:0 0 22px;font-size:clamp(16px,1.6vw,19px);max-width:44ch;color:rgba(255,255,255,.88)}
 .px-chips{display:flex;flex-wrap:wrap;gap:10px}
 .px-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:999px;padding:9px 15px;font:600 14.5px/1.2 system-ui,sans-serif;text-decoration:none;white-space:nowrap}
@@ -64,7 +65,7 @@ body{overflow-x:clip}
 .px-tm{position:absolute;top:14px;right:16px;font:500 11px system-ui;color:rgba(255,255,255,.75);letter-spacing:.04em}
 /* galeri */
 .px-gal{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:clamp(420px,52vw,600px)}
-.px-gal figure{margin:0;position:relative;border-radius:var(--px-r);overflow:hidden;border:var(--px-bd);box-shadow:var(--px-sh)}
+.px-gal figure{background:var(--px-surf);margin:0;position:relative;border-radius:var(--px-r);overflow:hidden;border:var(--px-bd);box-shadow:var(--px-sh)}
 .px-gal figure:first-child{grid-row:span 2}
 .px-gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}
 .px-gal figure:hover img{transform:scale(1.04)}
@@ -72,7 +73,7 @@ body{overflow-x:clip}
 /* adımlar */
 .px-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
 .px-step{background:var(--px-surf);border:var(--px-bd);box-shadow:var(--px-sh);border-radius:var(--px-r);padding:28px 26px;position:relative}
-.px-step:before{counter-increment:s;content:"0" counter(s);font-family:var(--px-head);font-size:54px;line-height:1;color:var(--px-acc);display:block;margin-bottom:18px}
+.px-step:before{font-variant-numeric:lining-nums;counter-increment:s;content:"0" counter(s);font-family:var(--px-head);font-size:54px;line-height:1;color:var(--px-acc);display:block;margin-bottom:18px}
 .px-step h3{font-family:var(--px-head);text-transform:var(--px-up);font-size:23px;margin:0 0 8px;line-height:1.15}
 .px-step p{margin:0;color:var(--px-mute);font-size:16px}
 .px-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
@@ -110,6 +111,11 @@ body{overflow-x:clip}
  .px-gal figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}
  .px-steps,.px-faq,.px-map{grid-template-columns:1fr}
  .px-hero{min-height:520px}
+ .px-chips .px-chip:nth-child(2){display:none}
+ .px-chip{padding:7px 12px;font-size:13px}
+ .px-hero img{object-position:50% 20%}
+ .px-gal figcaption{white-space:nowrap;font-size:12px}
+ .px-bar.two{grid-template-columns:1fr 1fr}
 }
 @media(min-width:761px){.px-fab{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:#1fae5b;color:#fff;display:grid;place-items:center;box-shadow:0 14px 34px -8px rgba(31,174,91,.6);transition:transform .2s}.px-fab:hover{transform:scale(1.08)}.px-fab svg{width:28px;height:28px;fill:#fff}}
 @media(max-width:760px){.px-fab{display:none}}
@@ -142,12 +148,12 @@ body{overflow-x:clip}
  <div><small>Telefon</small><b><a href="tel:+905320512482" style="text-decoration:none">0532 051 24 82</a></b></div>
  <div><small>Saatler · teyit edilecek</small><b>Arayın</b></div>
 </div></section>
-<section class="px px-sec" id="galeri"><div class="px-w"><span class="k">İçeriden kareler</span><h2 class="px-r">Dostunuz burada kendini evinde hisseder.</h2><p class="px-lead">Fotoğraflar temsilidir; kliniğinizin kendi fotoğraflarıyla değiştirilecek.</p><div class="px-gal"><figure class="px-r"><img src="img/g2.jpg" alt="Aşı" loading="lazy"><figcaption>Aşı</figcaption></figure><figure class="px-r"><img src="img/g12.jpg" alt="Egzotik dostlar" loading="lazy"><figcaption>Egzotik dostlar</figcaption></figure><figure class="px-r"><img src="img/g7.jpg" alt="Muayene sonrası ödül" loading="lazy"><figcaption>Muayene sonrası ödül</figcaption></figure></div></div></section>
-<section class="px px-sec" style="padding-top:0" id="randevu-adim"><div class="px-w"><span class="k">Randevu 3 adımda</span><h2 class="px-r">Bir dakikada randevu.</h2><p class="px-lead">Telefonda beklemek yok. Size uygun saati birlikte bulalım.</p>
+<section class="px px-sec" id="galeri"><div class="px-w"><span class="k">İçeriden kareler</span><h2 class="px-r">Dostunuz burada kendini evinde hisseder.</h2><p class="px-lead" style="font-size:13px;margin-bottom:22px">Fotoğraflar temsilidir; kliniğinizin kendi fotoğraflarıyla değiştirilecek.</p><div class="px-gal"><figure class="px-r"><img src="img/g2.jpg" alt="Aşı"><figcaption>Aşı</figcaption></figure><figure class="px-r"><img src="img/g12.jpg" alt="Egzotik dostlar"><figcaption>Egzotik dostlar</figcaption></figure><figure class="px-r"><img src="img/g7.jpg" alt="Muayene sonrası ödül"><figcaption>Muayene sonrası ödül</figcaption></figure></div></div></section>
+<section class="px px-sec" style="padding-top:clamp(28px,4vw,56px)" id="randevu-adim"><div class="px-w"><span class="k">Randevu 3 adımda</span><h2 class="px-r">Bir dakikada randevu.</h2><p class="px-lead">Telefonda beklemek yok. Size uygun saati birlikte bulalım.</p>
 <div class="px-steps"><div class="px-step px-r"><h3>WhatsApp'tan yazın</h3><p>Dostunuzun adını ve şikâyetini kısaca yazın; fotoğraf da gönderebilirsiniz.</p></div><div class="px-step px-r"><h3>Saatinizi verelim</h3><p>Size bugün ya da yarın için uygun bir saat önerelim.</p></div><div class="px-step px-r"><h3>Dostunuzla gelin</h3><p>Varsa aşı karnesini de getirin; gerisini biz hallederiz.</p></div></div>
 <div class="px-btns"><a class="px-btn p" href="https://wa.me/905320512482?text=Merhaba%20Nefes%20Veteriner%2C%20randevu%20almak%20istiyorum."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 8.6 19z"/></svg>WhatsApp'tan yazın</a><a class="px-btn s" href="https://www.google.com/maps/search/?api=1&amp;query=Nefes+Veteriner+Klini%C4%9Fi+Birlik+Sanayi+Sitesi+3.+Cd.+No%3A21%2C+34520+Beylikd%C3%BCz%C3%BC%2F%C4%B0stanbul" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Yol tarifi</a></div></div></section>
 
-<section class="px px-sec" style="padding-top:0" id="konum"><div class="px-w"><div class="px-map px-r"><div class="in"><span class="k" style="color:var(--px-acc2)">Bize ulaşın</span><h2>Birlik Sanayi Sitesi, Beylikdüzü</h2>
+<section class="px px-sec" style="padding-top:clamp(28px,4vw,56px)" id="konum"><div class="px-w"><div class="px-map px-r"><div class="in"><span class="k" style="color:var(--px-acc2)">Bize ulaşın</span><h2>Birlik Sanayi Sitesi, Beylikdüzü</h2>
 <div class="px-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Birlik Sanayi Sitesi 3. Cd. No:21, 34520 Beylikdüzü/İstanbul</span></div><div class="px-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Saatler için arayın</span></div><div class="px-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+905320512482">0532 051 24 82</a></div>
 <div class="px-btns" style="margin-top:6px"><a class="px-btn p" href="https://wa.me/905320512482?text=Merhaba%20Nefes%20Veteriner%2C%20randevu%20almak%20istiyorum."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 8.6 19z"/></svg>WhatsApp'tan yazın</a><a class="px-btn s" style="color:#fff" href="https://www.google.com/maps/search/?api=1&amp;query=Nefes+Veteriner+Klini%C4%9Fi+Birlik+Sanayi+Sitesi+3.+Cd.+No%3A21%2C+34520+Beylikd%C3%BCz%C3%BC%2F%C4%B0stanbul" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Yol tarifi</a></div></div>
 <iframe title="Nefes Veteriner Kliniği konumu" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Nefes+Veteriner+Klini%C4%9Fi+Birlik+Sanayi+Sitesi+3.+Cd.+No%3A21%2C+34520+Beylikd%C3%BCz%C3%BC%2F%C4%B0stanbul&amp;z=16&amp;output=embed"></iframe></div></div></section>
